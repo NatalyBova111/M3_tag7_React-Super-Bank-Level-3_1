@@ -1,0 +1,36 @@
+.sb-page {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: #5b46a5; 
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+}
+
+.sb-shell {
+  width: min(600px, 100%);   
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* ← одна колонка */
+  gap: 16px;                  /* расстояние между карточкой и формой */
+  justify-items: center;      /* карточка и форма по центру */
+}
+
+
+.sb-right {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  padding: 16px;
+  width: 100%; /* ← форма тянется на всю ширину контейнера */
+}
+
+
+.sb-footer {
+  grid-column: 1 / -1;  
+  width: 100%;
+  text-align: center;
+  color: #e5e7eb;
+  margin-top: 16px;
+}

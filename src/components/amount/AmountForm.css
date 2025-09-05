@@ -1,0 +1,13 @@
+.sb-amount { margin-top: 16px; }
+.sb-amount label { display:block; font-size:14px; color:#374151; margin-bottom:6px; }
+.sb-amount input {
+  width: 100%;
+  box-sizing: border-box;  
+  font-size: 18px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+.sb-amount__help { margin-top:6px; font-size:12px; color:#6b7280; }
+.sb-amount__help.is-error { color:#b91c1c; }

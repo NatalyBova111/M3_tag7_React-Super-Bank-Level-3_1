@@ -1,0 +1,36 @@
+/* === CardFace.css */
+.sb-cardface {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+
+  /* базовый масштаб (для десктопа) */
+  --cc-scale: 2.2;
+}
+
+/* иконка (обёртка) */
+.sb-cardface__icon {
+  transform: scale(var(--cc-scale));
+  transform-origin: center;
+}
+
+/* подпись */
+.sb-cardface__tag {
+  font-size: 12px;
+  color: #3730a3;
+  background: #eef2ff;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+/* ---------- Адаптив ---------- */
+@media (max-width: 480px) {
+  .sb-cardface { --cc-scale: 1.6; }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .sb-cardface { --cc-scale: 1.8; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sb-cardface { --cc-scale: 2.0; }
+}
+
